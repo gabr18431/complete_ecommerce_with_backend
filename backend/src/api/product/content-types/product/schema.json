@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "clothes",
+        "home",
+        "shoes",
+        "accessories",
+        "electronics"
+      ]
+    },
+    "filters": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

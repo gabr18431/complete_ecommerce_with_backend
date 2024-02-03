@@ -1,0 +1,130 @@
+.checkoutLayout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.checkoutLayout .right {
+    background-color: #1976d21f;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid #1976d2;
+    height: 710px;
+    overflow: hidden;
+    max-width: 475px;
+}
+
+.checkoutLayout .right .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #1976d299;
+    padding-bottom: 20px;
+}
+
+.checkoutLayout .form h2,
+.checkoutLayout .form .group:nth-child(-n+3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.checkoutLayout .right .return .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkoutLayout .right .return .row div:nth-child(2) {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.buttonCheckout {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1976d2d1;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.returnCart h2 {
+    /* border-top: 1px solid #9593937d;   */
+    border-bottom: 1px solid #9593937d;
+    padding: 20px 0;
+}
+
+.returnCart .list .item img {
+    height: 80px;
+    margin-left: 15px;
+}
+
+.returnCart .list .item {
+    display: grid;
+    grid-template-columns: 80px 1fr 50px 80px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-shadow: 0 10px 20px #5555;
+    border-radius: 20px;
+    background-color: #2b3445;
+    color: white;
+}
+
+.returnCart .list .item .name,
+.returnCart .list .item .returnPrice {
+    font-size: large;
+    font-weight: bold;
+}
+
+.returnCart .list .item .name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 90px;
+}
+
+#paypal-button-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 968px) {
+    .checkoutLayout {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkoutLayout {
+        padding: 50px 0;
+    }
+    .checkoutLayout .right {
+        padding-top: 10px;
+        height: 680px;
+    }
+    .returnCart .list .item {
+        gap: 10px;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .returnCart .list .item .name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 90px;
+    }
+
+    .returnCart .list .item img {
+        margin-left: 0;
+        width: 70px;
+        height: 70px;
+    }
+}

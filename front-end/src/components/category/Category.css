@@ -1,0 +1,16 @@
+.myTitle::before {
+    left: 0;
+}
+.myTitle {
+    text-transform: capitalize;
+}
+.categoryPage .css-7tqi8a-MuiContainer-root {
+    gap: 10px;
+    justify-content: space-between;
+}
+@media (max-width:759px) {
+    .categoryPage .css-7tqi8a-MuiContainer-root {
+        gap: 5px;
+        justify-content: center;
+    }
+}

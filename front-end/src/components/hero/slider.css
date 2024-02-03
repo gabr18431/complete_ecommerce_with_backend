@@ -1,0 +1,72 @@
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-slide:hover{
+  cursor: grab;
+}
+
+.swiper-slide:active{
+  cursor: grabbing;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  height: 500px;
+}
+
+
+@media (max-width: 1120px) {
+  .box-icon-section:is(:nth-child(1), :nth-child(3)) {
+    border-right: 1px solid rgba(170, 170, 170, 0.5);
+  }
+  .box-icon-section:is(:nth-child(1), :nth-child(2)) {
+    border-bottom: 1px solid rgba(170, 170, 170, 0.5);
+  }
+  }
+@media (max-width: 600px) {
+  .parent-slider img {
+    display: none;
+  }
+  .mySwiper {
+    height: 320px;
+  }
+  .css-e6tgdz {
+    flex-direction: column !important;
+    height: auto !important;
+    gap: 10px;
+  }
+  .css-1upngtl {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .hero-section .swiper {
+    width: 100%;
+  }
+  .parent-slider h5 {
+    font-size: 1rem !important;
+  }
+  .parent-slider h4 {
+    font-size: 1.5rem !important;
+  }
+  .parent-slider p {
+    font-size: 0.8rem !important;
+  }
+  }
+
+
